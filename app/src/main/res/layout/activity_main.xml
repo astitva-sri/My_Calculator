@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="35sp"
+            android:textStyle="bold"
             android:gravity="end"
             android:background="@drawable/edit_text_background"
             android:focusable="false"
@@ -29,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="45sp"
+            android:textStyle="bold"
             android:gravity="end"
             android:background="@drawable/edit_text_background"
             android:focusable="false"
@@ -62,6 +64,7 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#BDAEAE"
                 android:textColor="@color/black"
+                android:onClick="buttonClicked"
                 />
             <Button
                 android:text="D"
@@ -74,7 +77,9 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FFBDAEAE"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="%"
                 android:layout_width="60dp"
@@ -83,12 +88,36 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FFBDAEAE"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+
+                android:onClick="buttonClicked"/>
             <Button
-                android:text="/"
+                android:text="log"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:textSize="25sp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FF9800"
+                android:textColor="#0C0C0C"
+                android:onClick="buttonClicked"
+
+                android:enabled="false"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:text="√"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:insetTop="0dp"
@@ -97,8 +126,49 @@
                 android:insetRight="0dp"
                 android:textSize="20sp"
                 android:layout_margin="5dp"
+                android:backgroundTint="#332F2F"
+                android:textColor="@color/white"
+
+                android:onClick="buttonClicked"/>
+            <Button
+                android:text="("
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FF332F2F"
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
+            <Button
+                android:text=")"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FF332F2F"
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
+            <Button
+                android:text="/"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:textSize="25sp"
+                android:layout_margin="5dp"
                 android:backgroundTint="#FF9800"
-                android:textColor="#0C0C0C"/>
+                android:textColor="@color/black"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow
@@ -117,7 +187,8 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#332F2F"
                 android:textColor="@color/white"
-                />
+
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="8"
                 android:layout_width="60dp"
@@ -129,7 +200,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="9"
                 android:layout_width="60dp"
@@ -141,7 +213,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="X"
                 android:layout_width="60dp"
@@ -150,10 +223,11 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF9800"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow
@@ -172,7 +246,8 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
                 android:textColor="@color/white"
-                />
+
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="5"
                 android:layout_width="60dp"
@@ -184,7 +259,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="6"
                 android:layout_width="60dp"
@@ -196,7 +272,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="-"
                 android:layout_width="60dp"
@@ -205,10 +282,11 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF9800"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow
@@ -227,7 +305,8 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
                 android:textColor="@color/white"
-                />
+
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="2"
                 android:layout_width="60dp"
@@ -239,7 +318,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="3"
                 android:layout_width="60dp"
@@ -251,7 +331,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="+"
                 android:layout_width="60dp"
@@ -260,10 +341,11 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF9800"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow
@@ -283,7 +365,8 @@
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
                 android:textColor="@color/white"
-                />
+
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="."
                 android:layout_width="60dp"
@@ -295,7 +378,8 @@
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF332F2F"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="buttonClicked"/>
             <Button
                 android:text="="
                 android:layout_width="60dp"
@@ -304,10 +388,11 @@
                 android:insetBottom="0dp"
                 android:insetLeft="0dp"
                 android:insetRight="0dp"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:backgroundTint="#FF9800"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
     </TableLayout>
